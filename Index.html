@@ -26,21 +26,10 @@
 function nav(){
 document.getElementById("nav-bar").classList.toggle("nav")}
 //Krill Harflari
-   var kirils = ["ю", "Ю", "я", "Я", "ё", "Ё", "ш", "Ш", "ч", "Ч", "ў", "Ў",
-    "қ", "Қ", "ғ", "Ғ", "ц", "Ц", "й", "Й", "у", "У", "к", "К",
-    "е", "Е", "н", "Н", "г", "Г", "щ", "Щ", "з", "З", "х", "Х",
-    "э", "Э", "ж", "Ж", "д", "Д", "л", "Л", "о", "О", "р", "Р",
-    "п", "П", "а", "А", "в", "В", "ф", "Ф", "с", "С", "м", "М",
-    "и", "И", "т", "Т", "б", "Б", "қ", "Қ", "ҳ", "Ҳ", "ғ", "Ғ", "ъ", "ь", "ў", "Ў"];
+   var kirils = ["Ю","Ч","ю","ч","Ғ","ғ","Ў","ў","Ц","У","К","Е","Ё","Н","Г","Ш","Щ","З","Х","Ҳ","Ъ","Ф","Қ","В","А","П","Р","О","Л","Д","Ж","Э","Я","С","М","И","Т","Ь","Б","Й","ц","у","к","е","ё","н","г","ш","щ","з","х","ҳ","ъ","ф","қ","в","а","п","р","о","л","д","ж","э","я","с","м","и","т","ь","б","й"];
 
 //Lotin Harflari
-var lotins = ["yu", "Yu", "ya", "Ya", "yo", "Yo", "sh", "Sh", "ch", "Ch", "oʻ", "Oʻ",
-    "q", "Q", "g'", "G'", "ts", "Ts", "y", "Y", "u", "U", "k", "K", "e", "E",
-    "n", "N", "g", "G", "sh", "Sh", "z", "Z", "x", "X", "e", "E", "j", "J",
-    "d", "D", "l", "L", "o", "O", "r", "R", "p", "P", "a", "A", "v", "V", "f",
-    "F", "s", "S", "m", "M", "i", "I", "t", "T", "b", "B", "q", "Q", "h", "H",
-    "g'", "G'", "'", "`", "o'", "O'"];
-
+var lotins = ["Yu","Ch","yu","ch","G'","g'","O'","o'","Ts","U","K","Ye","Yo","N","G","Sh","Sh","Z","H","X","`","F","Q","V","A","P","R","O","L","D","J","E","Ya","S","M","I","T","'","B","Y","ts","u","k","ye","yo","n","g","sh","sh","z","h","x","`","f","q","v","a","p","r","o","l","d","j","e","ya","s","m","i","t","'","b","y"];
 var lotin = document.getElementById("lotin")
 var kril = document.getElementById("kril")
 var res = document.getElementById("res")
@@ -70,10 +59,6 @@ res.style.transform="rotate("+deg+"deg)"
 
 function copy() {        
 window.navigator.vibrate([100,50,100])
-notf.style.display="grid"
-setTimeout(() => {
-  notf.classList="hide"
-},2000)
     lotin.focus();
     lotin.select();
 try{
@@ -84,11 +69,6 @@ console.log("Error, unable to copy.");
 }
 function copy1() {        
 window.navigator.vibrate([100,50,100])
-notf.style.display="grid"
-setTimeout(() => {
-  notf.classList="hide"
-},2000)
-
     kril.focus();
     kril.select();
 try{
@@ -97,8 +77,8 @@ try{
 console.log("Error, unable to copy.");
     } 
 }
-</script>   
-<style>
+</script>    
+ <style>
     *{
     margin:0;padding:0;
     box-sizing:border-box ;
@@ -165,7 +145,6 @@ footer h3{
     border-radius:10px;
     box-shadow:0 0 0 4px #38b8d0;
 }
-</style> 
-    
+</style>   
     </body>
 </html>
